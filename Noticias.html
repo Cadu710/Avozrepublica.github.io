@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - A Voz do República</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-weight: 500;
+            font-style: normal;
+            position: relative;
+            margin: 0;
+            min-height: 100%;
+            overflow-x: hidden;
+
+        }
+        #hyper{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        border-style: solid;
+        padding-left: 30px;
+        padding-right: 25px;
+        border-color: transparent;
+        }
+        #hyper:hover{
+        transition: all 0.1s;
+        background-color: white;
+        border-style: solid;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        padding-left: 30px;
+        padding-right: 25px;
+        color: black;
+        border-color: white;
+        }
+        nav{
+        font-family: "Poppins", serif;
+        
+        }
+        #logo{
+            height: 100px;
+            padding-top: 10px;
+            
+        }
+        #logodiv{
+        height: 150px;
+        
+        }
+     
+        header{
+        background-color: #2867ce;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        min-height: 30px;
+        margin-top: 2rem;
+        border-bottom: solid;
+        border-top: solid;
+        border-width: 4px;
+        border-color: #2867ce;
+        }
+        #logo{
+            margin-top: 2rem;
+        }
+        #txt{
+        margin-top: -7px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        }
+        span{
+            color: #2867ce;
+        }
+        #hyperf{
+        border-radius: 10px;
+        width: 255px;
+        height: 255px;
+        }
+        #centro{
+            text-align: center;
+            margin: 0;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+       footer{
+        background-color: #2867ce;
+        width: 80%;
+        height: 15vh;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 2rem 0 4rem 0;
+        column-gap: 10rem;
+
+       }
+       #fotofot{
+        max-width: 100%;
+        height: 5vw;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: -5rem;
+        border-right: solid white 2px;
+        padding-right: 6rem;
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+       }
+       .footer-container{
+        background-color: #2867ce;
+        margin-bottom: 0rem;
+        text-align: center;
+        padding: 1.2rem 0 4rem 0;
+        margin-top: 2rem;
+       }
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .footer-heading{
+        display: flex;
+        flex-direction: column;
+       }
+       
+       .footer-heading h2{
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+       }
+       .footer-heading a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 0rem;
+       }
+       .footer-heading a:hover{
+        text-decoration: underline;
+       }
+       #footer-creditos{
+        margin-top: auto;
+        margin-bottom: auto;
+       }
+       .noticias{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: auto;
+        column-gap: 10rem;
+        width: 90%;
+       }
+       .artigo{
+        margin-top: 4rem;
+       }
+       .artigo img {
+        border-radius: 10px;
+        height: 15rem;
+        width: 24rem;
+       }
+       .artigo h2{
+        font-weight: 600;
+        font-size: 1.35rem;
+       }
+       .artigo p{
+        font-size: 1.06rem;
+        color: #636363;
+       }
+       .tags{
+        display: flex; 
+        column-gap: 1rem;
+        font-size: 0.8rem;
+        user-select: none;
+       }
+       #Edu{
+        background-color: #72E0FF;
+        border-radius: 20px;
+        padding: 0px 1.5rem 0px 1.5rem;
+        color: white;
+       }
+       #Aviso{
+        background-color: #FF8E72;
+        border-radius: 20px;
+        padding: 0px 0.75rem 0px 0.75rem;
+        color: white;
+       }
+       #Tec{
+        background-color: #AD72FF;
+        border-radius: 20px;
+        padding: 0px 1.5rem 0px 1.5rem;
+        color: white;
+       }
+       #Evento{
+        background-color: #FF7289;
+        border-radius: 20px;
+        padding: 0px 1rem 0px 1rem; 
+        color: white;
+       }
+       .artigo h2{
+        max-width: 21rem;
+        font-size: 1.5rem;
+       }
+       .artigo a{
+        color: black;
+        text-decoration: none;
+       }
+       .artigo h2:hover{
+        color: #2867ce;
+        transition: all 0.15s;
+       }
+       header div{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 0;
+            margin-top: -1.7rem;
+            font-size: 1.2rem;
+            margin-right: 15rem;
+            column-gap: 0.5rem ;
+            color: white;
+            align-items: center;
+        }
+        #noite{
+            color: black;
+        }
+        #dia{
+            color: #f5e400;
+        }
+        #tarde{
+            color: #FCAD5D;
+        }
+        header img {
+            height: 1.8rem;
+        }
+@media screen and (max-width:1500px){
+    header div{
+        margin-top: -10rem;
+        background-color: #2867ce;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-right: 0;
+    }
+    footer {
+        height: 25vh;
+        column-gap: 3rem;
+    }
+    #footer-onde{
+        margin-left: 4rem;
+    }
+    
+    
+}
+@media screen and (max-width:1150px){
+    header div{
+    margin-right: 0;
+}
+footer{
+    height: 20vh;
+    column-gap: 5rem;
+}
+#fotofot{
+    padding-right: 2rem;
+}
+.footer-heading h2{
+        font-size: 1.1rem;
+       }
+a{
+    font-size: 1rem;
+}
+.footer-heading.nav{
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width:769px){
+    
+    #hyper{
+        padding: 0;
+        margin: 0;
+        font-size: 0.99rem;
+    }
+    #hyper:hover{
+        border: none;
+        background-color: transparent;
+        transition: none;
+    }
+    header{
+        max-height: 35px;
+        margin-top: 2rem;
+    }
+    nav{
+        margin-top: 0px;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+    .footer-heading{
+        display: none;
+    }
+    #fotofot{
+        display: none;
+    }
+    footer{
+        height: 20rem;
+    }
+    .mobile-footer{
+        width: 100%;
+        height: 200px;
+    }
+    #fotofooter2{
+        height: 15vw;
+        border-bottom: solid white 2px;
+        padding-bottom: 1rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #location{
+        height: 15vw;
+        margin-top: 1.5rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    
+    header div{
+        left: 0;
+        margin-top: -14.8rem;
+        background-color: #2867ce;
+        height: 2.25rem;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+    header div p{
+        margin-top: 2rem;
+    }
+    
+    #logo{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .mobile-footer{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body onload="atualizarTexto()">
+    <div id="logodiv">
+        <p id="centro"><a href="teste responsivo.html" id="logohref"><img src="avr.png" id="logo"></a></p>
+        <p id="txt">O JORNAL DA <span>MAIOR</span>!</p>
+       </div>
+       <header> <nav> <a href="Noticias.html" id="hyper">Notícias</a> <a href="Blog rework.html"  id="hyper">Blog</a>  <a href=""  id="hyper">Membros</a> <a href="Doação.html"  id="hyper">Doar<div><img src="" id="imagem"> <p id="texto-dinamico"></p></div></a></nav></header>
+
+       <div class="noticias">
+        
+        <div class="artigo">
+        <a href=""><img src="fotosnt/etergeneric.png" alt="">
+        <h2>Governo dá inicio às obras da ETER</h2></a>
+        <p>Claudio castro dá palestra e inicia as obras <br> do colégio. Saiba mais</p>
+        <div class="tags"> <p id="Edu">Edu</p> <p id="Aviso">Avisos</p>  </div>
+        </div>
+
+        <div class="artigo">
+        <a href=""><img src="fotosnt/Estagiogeneric.png" alt="">
+        <h2>Vagas de estágio disponiveis</h2></a>
+        <p>DIVEST divulga vagas de estágio para alunos <br> de mecânica. Saiba mais</p>
+        <div class="tags"> <p id="Tec">Tec</p></div>
+        </div>
+
+        <div class="artigo">
+        <a href=""><img src="fotosnt/Refeitorio.png" alt="">
+        <h2>Almoço especial dia Sexta 26/02</h2></a>
+        <p>Almoço especial comemorando o <br> aniversario do colégio. Saiba mais</p>
+        <div class="tags"> <p id="Evento">Evento</p></div>
+        </div>
+
+        <div class="artigo">
+        <a href=""><img src="fotosnt/Professorgeneric.png" alt="">
+        <h2>Vagas de professores abertas</h2></a>
+        <p>Faetec abre concurso para professores <br> temporarios. Saiba mais</p>
+        <div class="tags"> <p id="Edu">Edu</p> <p id="Aviso">Avisos</p>  </div>
+        </div>
+
+        <div class="artigo">
+        <a href=""><img src="fotosnt/concurso.png" alt="">
+        <h2>Concurso da Faetec finalizado</h2></a>
+        <p>Gabarito extraoficial e n⁰ de vagas disponíveis. <br> Saiba mais.</p>
+        <div class="tags"> <p id="Aviso">Aviso</p></div>
+        </div>
+
+        <div class="artigo">
+        <a href=""><img src="fotosnt/etergeneric.png" alt="">
+        <h2>Pisos da ETER dilatam e quebram</h2></a>
+        <p>Nessa quinta os pisos do segundo andar <br> dilataram e quebraram. Saiba mais</p>
+        <div class="tags"> <p id="Aviso">Aviso</p></div>
+        </div>
+            
+        
+            
+
+
+
+
+            
+       </div>
+       
+       <script> 
+        function atualizarTexto() {
+        var data = new Date();
+        var horas = data.getHours();
+        var mensagem;
+        var imagemSrc;
+        if (horas < 12) {
+        mensagem = 'Bom <span id="dia">dia</span>, leitor.';
+        imagemSrc = 'sol.png'
+        } 
+        else if (horas < 18) {
+        mensagem = 'Boa <span id="tarde">tarde </span>, leitor.'; 
+        imagemSrc = 'solt.png'
+        }
+        else {
+        mensagem = 'Boa <span id="noite">noite</span>, leitor.'; 
+        imagemSrc = 'lua.png'
+        }
+        document.getElementById("texto-dinamico").innerHTML = mensagem;
+        document.getElementById("imagem").src = imagemSrc;
+    } 
+        </script> 
+       <div class="footer-container">
+       <footer>
+       <img src="avr.png" id="fotofot">
+
+       <div class="footer-heading onde" id="footer-onde">
+        <h2>Onde estamos</h2>
+        <p>Sala 2 - 2⁰ andar <br> Rua Clarimundo <br> de Melo 847</p>
+       </div>
+
+       <div class="footer-heading redes">
+        <h2>Redes</h2>
+        <a href="" id="insta">Instagram</a>
+       </div>
+
+       <div class="footer-heading nav">
+        <h2>Navegação</h2>
+        <a href="teste responsivo.html" id="linksf">ínicio</a> 
+        <a href="Noticias.html" id="linksf">Notícias</a>
+        <a href="Blog rework.html" id="linksf">Blog</a>
+        <a href="" id="linksf">Membros</a> 
+        <a href="Doação.html" id="linksf">Doar</a> 
+       </div>
+
+       <div class="footer-heading creditos" id="footer-creditos">
+        <p>Site desenvolvido e  <br> mantido por Carlos Eduardo <br> Turma 1212 Informática</p>
+       </div>
+
+       <div class="mobile-footer">
+       <img src="avr.png" id="fotofooter2"> <br>
+     <img src="location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" id="location">
+     <p>Sala 2 - 2⁰ andar <br> Rua Clarimundo  de Melo 847</p>
+     <p>Site desenvolvido e  <br> mantido por Carlos Eduardo <br> Turma 1212 Informática</p>
+       </div>
+       </footer>
+    </div>
+</body>
+</html>

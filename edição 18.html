@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição 18 - A Voz do República</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-style: normal;
+            position: relative;
+            margin: 0;
+            min-height: 100%;
+            overflow-x: hidden;
+
+        }
+        #hyper{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        border-style: solid;
+        padding-left: 30px;
+        padding-right: 25px;
+        border-color: transparent;
+        }
+        #hyper:hover{
+        transition: all 0.1s;
+        background-color: white;
+        border-style: solid;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        padding-left: 30px;
+        padding-right: 25px;
+        color: black;
+        border-color: white;
+        }
+        nav{
+        font-family: "Poppins", serif;
+        
+        }
+        #logo{
+            height: 100px;
+            padding-top: 10px;
+            
+        }
+        #logodiv{
+        height: 150px;
+        
+        }
+     
+        header{
+        background-color: #2867ce;
+        padding-top: 5px;
+        padding-bottom: 1px;
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        min-height: 30px;
+        margin-top: 0px;
+        border-bottom: solid;
+        border-top: solid;
+        border-width: 4px;
+        border-color: #2867ce;
+        }
+        #txt{
+        margin-top: -7px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 3px;
+        }
+        span{
+            color: #2867ce;
+        }
+        #hyperf{
+        border-radius: 10px;
+        width: 255px;
+        height: 255px;
+        }
+        #centro{
+            text-align: center;
+            margin: 0;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+       footer{
+        background-color: #2867ce;
+        width: 80%;
+        height: 15vh;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 2rem 0 4rem 0;
+        column-gap: 10rem;
+
+       }
+       #fotofot{
+        max-width: 100%;
+        height: 5vw;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: -5rem;
+        border-right: solid white 2px;
+        padding-right: 6rem;
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+       }
+       .footer-container{
+        margin-top: 0px;
+        background-color: #2867ce;
+        margin-bottom: 0rem;
+        text-align: center;
+        padding: 1.2rem 0 4rem 0;
+       }
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .footer-heading{
+        display: flex;
+        flex-direction: column;
+       }
+       
+       .footer-heading h2{
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+       }
+       .footer-heading a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 0rem;
+       }
+       .footer-heading a:hover{
+        text-decoration: underline;
+       }
+       #footer-creditos{
+        margin-top: auto;
+        margin-bottom: auto;
+       }
+      .paginas{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+      .botoes{
+        height: 2rem;
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content:space-around;
+        column-gap: 1rem;
+        margin-top: 0.5rem;
+        width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      button{
+        width: 5.45rem;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      button:hover{
+        cursor: pointer;
+      }
+      #bannerImage{
+        height: 50rem;
+        border: solid 2px;
+        width: 50rem;
+      }
+   
+@media screen and (max-width:1500px){
+    footer {
+        height: 25vh;
+        column-gap: 3rem;
+    }
+    #footer-onde{
+        margin-left: 4rem;
+    }
+    
+    
+}
+@media screen and (max-width:1150px){
+footer{
+    height: 20vh;
+    column-gap: 5rem;
+}
+#fotofot{
+    padding-right: 2rem;
+}
+.footer-heading h2{
+        font-size: 1.1rem;
+       }
+a{
+    font-size: 1rem;
+}
+.footer-heading.nav{
+    display: none;
+}
+#bannerImage{
+        height: 40rem;
+        border: solid 2px;
+        width: 40rem;
+      }
+      button{
+        width: 4rem;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      .botoes{
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 0.5rem;
+      }
+}
+
+
+@media screen and (max-width:769px){
+    
+    #hyper{
+        padding: 0;
+        margin: 0;
+        font-size: 0.99rem;
+    }
+    #hyper:hover{
+        border: none;
+        background-color: transparent;
+        transition: none;
+    }
+    header{
+        max-height: 35px;
+    }
+    nav{
+        margin-top: 0px;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+    .footer-heading{
+        display: none;
+    }
+    #fotofot{
+        display: none;
+    }
+    footer{
+        height: 20rem;
+    }
+    .mobile-footer{
+        width: 100%;
+        height: 200px;
+    }
+    #fotofooter2{
+        height: 15vw;
+        border-bottom: solid white 2px;
+        padding-bottom: 1rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #location{
+        height: 15vw;
+        margin-top: 1.5rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    #bannerImage{
+        height: 23rem;
+        border: solid 2px;
+        width: 23.5rem;
+      }
+      button{
+        width: 2.75rem;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+      .botoes{
+        height: 2rem;
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: center;
+        column-gap: 0.1rem;
+        margin-top: 0.5rem;
+        width: 23.5rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+           
+}
+
+@media screen and (min-width: 769px){
+    .mobile-footer{
+        display: none;
+    }
+}
+    </style>
+
+
+<script>
+    function changeImage(fileName) {
+        let img = document.querySelector("#bannerImage");
+        img.setAttribute("src", fileName)
+    }
+   </script>
+
+</head>
+<body>
+    <div id="logodiv">
+        <p id="centro"><a href="teste responsivo.html" id="logohref"><img src="avr.png" id="logo"></a></p>
+        <p id="txt">O JORNAL DA <span>MAIOR</span>!</p>
+       </div>
+       <header> <nav> <a href="Noticias.html" id="hyper">Notícias</a> <a href="Blog rework.html"  id="hyper">Blog</a>  <a href=""  id="hyper">Membros</a> <a href="Doação.html"  id="hyper">Doar</a></nav></header>
+       
+       <div class="paginas">
+
+       <img src="fotos/Ed18.png" id="bannerImage"> 
+    </div>
+
+    <div class="botoes">
+    <button onclick="changeImage('fotos/Ed18.png')">Capa</button>
+    <button onclick="changeImage('fotos/Ed18pag1.png')">1</button>
+    <button onclick="changeImage('fotos/Ed18pag2.png')">2</button>
+    <button onclick="changeImage('fotos/Ed18pag3.png')">3</button>
+    <button onclick="changeImage('fotos/Ed18pag4.png')">4</button>
+    <button onclick="changeImage('fotos/Ed18pag5.png')">5</button>
+    <button onclick="changeImage('fotos/Ed18pag6.png')">6</button>
+    <button onclick="changeImage('fotos/Ed18pag7.png')">7</button>
+    <button onclick="changeImage('fotos/Ed18pag8.png')">8</button>
+    <button onclick="changeImage('fotos/Ed18pag9.png')">9</button>
+</div>
+
+       
+
+       <div class="footer-container">
+       <footer>
+       <img src="avr.png" id="fotofot">
+
+       <div class="footer-heading onde" id="footer-onde">
+        <h2>Onde estamos</h2>
+        <p>Sala 2 - 2⁰ andar <br> Rua Clarimundo <br> de Melo 847</p>
+       </div>
+
+       <div class="footer-heading redes">
+        <h2>Redes</h2>
+        <a href="" id="insta">Instagram</a>
+       </div>
+
+       <div class="footer-heading nav">
+        <h2>Navegação</h2>
+        <a href="teste responsivo.html" id="linksf">ínicio</a> 
+        <a href="Noticias.html" id="linksf">Notícias</a>
+        <a href="Blog rework.html" id="linksf">Blog</a>
+        <a href="" id="linksf">Membros</a> 
+        <a href="Doação.html" id="linksf">Doar</a> 
+       </div>
+
+       <div class="footer-heading creditos" id="footer-creditos">
+        <p>Site desenvolvido e  <br> mantido por Carlos Eduardo <br> Turma 1212 Informática</p>
+       </div>
+
+       <div class="mobile-footer">
+       <img src="avr.png" id="fotofooter2"> <br>
+     <img src="location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" id="location">
+     <p>Sala 2 - 2⁰ andar <br> Rua Clarimundo  de Melo 847</p>
+     <p>Site desenvolvido e  <br> mantido por Carlos Eduardo <br> Turma 1212 Informática</p>
+       </div>
+
+       </footer>
+    </div>
+</body>
+</html>

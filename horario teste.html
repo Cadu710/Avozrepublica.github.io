@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head> <meta charset="UTF-8">
+<title>Texto por Hora</title>
+
+<script> 
+function atualizarTexto() {
+var data = new Date();
+var horas = data.getHours();
+var mensagem; if (horas < 12) {
+mensagem = "Bom dia!"; 
+} 
+else if (horas < 18) {
+mensagem = "Boa tarde!"; 
+}
+else {
+mensagem = "Boa noite!"; 
+}
+document.getElementById("texto-dinamico").innerHTML = mensagem; } 
+</script> 
+
+</head> 
+
+<body onload="atualizarTexto()">
+
+<h1 id="texto-dinamico">Olá!</h1> 
+
+</body> 
+</html>
